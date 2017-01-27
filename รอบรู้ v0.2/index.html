@@ -1,0 +1,277 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+    <style>
+      @font-face {font-family: thaisan;
+                                                                                       src: url(thaisanslite_r1.ttf);}
+                                                                                     * {font-family: thaisan; !important;}
+    </style>
+    <style>
+      .center {
+                                  text-align: center;
+                              }
+    </style>
+  </head>
+  <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 text-center">
+                                                <h2>register</h2>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+  <body>
+
+    <div class="navbar navbar-default navbar-static-top" style="background-color:#ffffff; text-align: center;">
+      <div class="container" style="; width:90%">
+        <div class="navbar-heade" style="margin-top:1%;height:10%">
+          <img src="pic/brand.png" style="height:100%">
+        </div>
+      </div>
+    </div>
+    <div class="cover">
+      <div class="cover-image" style="background-image: url(pic/22918-NU6SNY.jpg);"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center" style="margin-top:2%">
+		  <div class="col-md-4"></div>
+            <div class="col-md-5 text-center" style="background-color:368d7c;opacity:0.96;">
+              <font style="background-color:368d7c;font-size:45;" color="white">เรียนไป สอนไป</font>
+              <font style="background-color:368d7c;font-size:55;" color="white">
+                <i>เก่งไปด้วยกัน</i>
+              </font>
+            </div>
+            <br>
+            <div class="col-md-12 text-center">
+              <font style="background-color:774538;font-size:27;opacity:0.9;" color="white">Web APP ที่ทุกคนสามารถใช้แลกเปลี่ยนความรู้ด้วยกันได้</font>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a class="btn btn-danger" data-toggle="collapse" data-target="#login" style="font-size:200%;width:300;height:60">Join</a>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+		<div class="col-md-4"></div>
+          <div class="col-md-4 collapse" style="margin:auto;background-color:#ffffff;" id="login">
+		  <br>
+            <form class="form-horizontal"style="margin-left: 50px" role="form">
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputEmail3" class="control-label">Email</label>
+                </div>
+                <div class="col-sm-8">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inputPassword3" class="control-label">Password</label>
+                </div>
+                <div class="col-sm-8">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-4">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">Remember me</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default btn-info btn-lg"><font size="5">Sign in</font></button>
+
+                                    <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">
+                                        <font size="5">
+
+                                                Register
+
+                                        </font>
+                                    </button>
+                </div>
+              </div>
+			  <br>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 text-center">
+                                                <h2>register</h2>
+                                                <form action="controller/register.php" method="post" enctype="multipart/form-data">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="user" placeholder="username">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" name="pass" placeholder="password">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="email" placeholder="E-mail">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="name" placeholder="ชื่อจริง">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="surname" placeholder="นามสกุล">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="file" class="form-control" name="image">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="flag" value="1">นักเรียน</label>
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="flag" value="2" data-toggle="collapse" data-target="#payment">คุณครู</label>
+                                                        <div id="payment" class="collapse">
+                                                            <div class="container">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" name="payment_number" placeholder="หมายเลขบัญชี">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="submit" class="btn btn-default" name="submit" value="สมัครสมาชิก">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    <div class="section" style="background-color:f2f2f2;margin-top:10">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" align="center">
+            <img src="pic/float.gif" style="width:30%;">
+            <br>
+            <font style="font-weight: bold;font-size:400%;">รอบรู้ คืออะไร?</font>
+            <br>
+            <p>
+              <font style=";font-size:200%;">เว็บแอ็พ ศูนย์รวบรวมความรู้ที่ทุกคนสามารถใช้เพื่อแลกเปลี่ยนหรือหาความรู้ได้</font>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <font style="font-weight: bold;font-size: 270%;margin-left:5%">รอบรู้มีอะไร ทำอะไรได้บ้าง?</font>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3" style="background-color:#4285f4">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><font style="font-weight: bold;font-size: 200%;margin-left:5%" color="white">เรียนได้ฟรีๆไม่เสียเงิน</font>
+        </a>
+        <div>เรียนได้ง่ายๆ แค่คลิ๊ก อ่าน และลงมือทำ
+          <br>.</div>
+      </div>
+      <div class="col-md-3" style="background-color:#ea4335">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><font style="font-weight: bold;font-size: 200%;margin-left:5%" color="white">รอบรู้มีอะไร ทำอะไรได้บ้าง?</font>
+        </a>
+        <div>เรียนได้ง่ายๆ แค่คลิ๊ก อ่าน และลงมือทำ</div>
+      </div>
+      <div class="col-md-3" style="background-color:#fbbc05">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        <font style="font-weight: bold;font-size: 200%;margin-left:5%" color="white">Point</font></a>
+        <div>เรียนได้ง่ายๆ แค่คลิ๊ก อ่าน และลงมือทำ</div>
+      </div>
+      <div class="col-md-3" style="background-color:#23a884">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+        <font style="font-weight: bold;font-size: 200%;margin-left:5%" color="white">แบ่งปันความรู้ที่มี</font></a>
+        <div>สำหรับผู้ที่ศึกษาเรื่องๆหนึ่งเป็นอย่างดีแล้วต้องการจะแชร์ ความรู้ แชร์เทคนิคการทำ
+          ก็ทำได้</div>
+      </div>
+    </div>
+    <div class="panel-collapse collapse" id="collapse1">
+      <div class="section panel-body" style="background-color:#4285f4">555555</div>
+    </div>
+    <div class="panel-collapse collapse" id="collapse2">
+      <div class="section" style="background-color:#ea4335">555555</div>
+    </div>
+    <div class="panel-collapse collapse" id="collapse3">
+      <div class="section panel-bod" style="background-color:#fbbc05">555555</div>
+    </div>
+    <div class="panel-collapse collapse" id="collapse4">
+      <div class="section panel-bod" style="background-color:#23a884">555555</div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" align="center" style="font-size:40">เพราะการสอนคือการเรียนรู้ ยิ่งสอนผู้อื่น คุณก็จะเข้าใจมากขึ้น
+            <br>
+            <i>ร่วมเรียนรู้ไปกับเรา</i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section section-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>Footer header</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+              <br>Ut enim ad minim veniam, quis nostrud</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-info text-right">
+              <br>
+              <br>
+            </p>
+            <div class="row">
+              <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 hidden-xs text-right">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+</body></html>
